@@ -1,4 +1,5 @@
 language: ruby
+<<<<<<< HEAD
 cache: bundler
 
 rvm:
@@ -11,3 +12,14 @@ script:
 branches:
   only:
     - gh-pages
+=======
+rvm:
+  - 2.1.1
+script:
+  - jekyll build --trace
+  - htmlproof ./_site
+branches:
+  only:
+    - gh-pages
+
+>>>>>>> origin/master
